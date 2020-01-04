@@ -17,6 +17,13 @@ Book.prototype.getAge = function() {
   return `${this.title} is ${yearsDiff} years old`
 }
 
+//Revise / Change year
+
+Book.prototype.revise = function(newYear) {
+  this.year = newYear,
+  this.revised = true;
+}
+
 //Instantiate an object
 const book1 = new Book('Book1', 'John Doe', 2014)
 const book2 = new Book('Book2', 'Jane Doe', 2001)
