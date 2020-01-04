@@ -1,6 +1,8 @@
 //Constructor
-function Book() {
-  console.log('book intialized')
+function Book(title, author, year) {
+  this.title = title;
+  this.author = author;
+  this.year = year;
 }
 
 //Instantiate an object
