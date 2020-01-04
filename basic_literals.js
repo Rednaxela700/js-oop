@@ -10,3 +10,5 @@ const book1 = {
 
 //return an array of object values
 console.log(Object.values(book1))
+//return an array of object keys
+console.log(Object.keys(book1))
