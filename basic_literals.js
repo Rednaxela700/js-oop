@@ -6,3 +6,7 @@ const book1 = {
     return `${this.title} written by ${this.author} in ${this.year}`
   }
 }
+
+
+//return an array of object values
+console.log(Object.values(book1))
