@@ -6,4 +6,5 @@ function Book(title, author, year) {
 }
 
 //Instantiate an object
-const book1 = new Book()
+const book1 = new Book('Book1', 'John Doe', 2014)
+const book2 = new Book('Book2', 'Jane Doe', 2001)
