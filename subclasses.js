@@ -19,4 +19,4 @@ class Magazine extends Book {
 
 //instantiate object
 mag1 = new Magazine('Mag one', 'Jane Doe', 2018, 'Jan')
-console.log(mag1)
+console.log(mag1.getSummary())
