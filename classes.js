@@ -16,9 +16,14 @@ class Book {
       this.year = newYear,
       this.revised = true;
   }
+  
+  static bestEmployee() {
+    return `The best employee is... Someone!`
+  }
 }
 
 //Instantiate object
 const book1 = new Book("book1", "Jane Doe", 2013);
 book1.revise(2005)
 console.log(book1.getSummary());
+console.log(Book.bestEmployee())
