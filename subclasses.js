@@ -16,3 +16,7 @@ class Magazine extends Book {
     this.month = month
   }
 }
+
+//instantiate object
+mag1 = new Magazine('Mag one', 'Jane Doe', 2018, 'Jan')
+console.log(mag1)
