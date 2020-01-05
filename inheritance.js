@@ -17,6 +17,11 @@ function Magazine(title, author, year, month) {
   this.month = month
 }
 
-const mag1 = new Magazine('Mag One', 'John Doe', 2020, 'January')
+//inherit prototype
+Magazine.prototype = Object.create(Book.prototype)
 
-console.log(mag1)
+const mag1 = new Magazine('Mag One', 'John Doe', 2020, 'January')
+//now mag1 has Book constructor
+
+console.log(mag1.getSummary())
+
