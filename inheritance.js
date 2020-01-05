@@ -23,5 +23,7 @@ Magazine.prototype = Object.create(Book.prototype)
 const mag1 = new Magazine('Mag One', 'John Doe', 2020, 'January')
 //now mag1 has Book constructor
 
-console.log(mag1.getSummary())
+Magazine.prototype.constructor = Magazine;
+
+console.log(mag1)
 
