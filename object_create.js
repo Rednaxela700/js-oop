@@ -11,11 +11,17 @@ const bookProtos = {
 }
 
 //create object
-const book1 = Object.create(bookProtos)
-book1.title = 'book1'
-book1.author = 'John Dafoe'
-book1.year = 2007
+// const book1 = Object.create(bookProtos)
+// book1.title = 'book1'
+// book1.author = 'John Dafoe'
+// book1.year = 2007
 
+
+const book1 = Object.create(bookProtos, {
+  title: {value: 'book1'},
+  author: {value: 'Johnny Doe'},
+  year: {value: 2009}
+})
 
 console.log(book1.getSummary())
 console.log(book1.getAge())
