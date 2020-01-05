@@ -8,3 +8,11 @@ class Book {
     return `${this.title} written by ${this.author} in ${this.year}`;
   }
 }
+
+//Magazine subclass
+class Magazine extends Book {
+  constructor(title, author, year, month) {
+    super(title, author, year);
+    this.month = month
+  }
+}
